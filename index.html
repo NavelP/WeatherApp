@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body id="body">
+    <!--main body div-->
+    <div class="main-body">
+        <div class="top-bar">
+            <!-- icon of the app -->
+            <div class="icon">
+                <img src="images/app_icon.jpg">
+                <p>Weather App</p>
+            </div>
+            <!-- search for a city's weather by name -->
+            <input type="text" placeholder="Enter city name..." id="search_city"/>
+
+            <label class="switch" id="toggle">
+                <input type="checkbox" id="toggle2">
+                <div id="slide-ball" class="slider round"></div>
+            </label>
+
+            <p id="time">Light/Dark</p>
+
+        </div>
+        
+        <!-- div to display weather details -->
+        <div class="weather-details">
+            <!-- name of the city -->
+            <p id="city-name">
+                City: NAIROBI
+            </p>
+
+            <div class="weather-conditions">
+
+                <div class="weather-condition">
+                    <p class="title">Sunny</p>
+                    <img src="images/sunny.jpg"/>
+                    <p id="sunny_value">No sunshine</p>
+                </div>
+
+                
+                <div class="weather-condition">
+                    <p class="title">Clouds</p>
+                    <img src="images/cloudy.png"/>
+                    <p id="clouds_value">No clouds</p>
+                </div>
+                
+                <div class="weather-condition">
+                    <p class="title">Humity</p>
+                    <img src="images/humidity.png"/>
+                    <p id="humidity_value">No humidity</p>
+                </div>
+                
+                <div class="weather-condition">
+                    <p class="title">Temperature</p>
+                    <img src="images/temperature.png"/>
+                    <p id="temperature_value">0 FH</p>
+                </div>
+
+                
+                <div class="weather-condition">
+                    <p class="title">Wind Speed</p>
+                    <img src="images/wind_speed.png"/>
+                    <p id="wind_value">0 km/h</p>
+                </div>
+                
+                
+                <div class="weather-condition">
+                    <p class="title">Pressure</p>
+                    <img src="images/pressure.jpg"/>
+                    <p id="pressure_value">0</p>
+                </div>
+                
+            </div>
+        </div>   
+    </div>
+
+    <!-- add our javascript file -->
+    <script src="index.js"></script>
+</body>
+</html>
